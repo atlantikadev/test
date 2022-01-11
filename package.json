@@ -1,0 +1,26 @@
+{
+  "name": "tijari_game",
+  "version": "1.0.0",
+  "description": "A Tijari game implementation with AI players",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Younes Ouhbi",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.17.1",
+    "express": "^4.17.1",
+    "moment": "^2.20.1",
+    "mongodb": "^2.2.26",
+    "mongoose": "^6.1.5",
+    "nodemon": "^2.0.15",
+    "random-words": "0.0.1",
+    "socket.io": "^1.7.3",
+    "socketio-jwt": "^4.5.0",
+    "underscore": "^1.8.3",
+    "underscore-deep-extend": "^1.1.5",
+    "uuid": "^3.0.1"
+  }
+}
