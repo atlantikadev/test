@@ -8,7 +8,7 @@ var socketioJwt = require('socketio-jwt');
 var gameManager = require('./server/core/game-manager');
 var dbManager = require('./server/data/db-manager');
 var config = require('./config');
-
+var PORT = process.env.PORT || 4200,
 const uuidV4 = require('uuid/v4');
 
 
