@@ -4,7 +4,7 @@
   "description": "A Tijari game implementation with AI players",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "author": "Youness",
   "license": "ISC",
