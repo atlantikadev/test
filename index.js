@@ -8,7 +8,7 @@ var socketioJwt = require('socketio-jwt');
 var gameManager = require('./server/core/game-manager');
 var dbManager = require('./server/data/db-manager');
 var config = require('./config');
-var PORT = process.env.PORT || 3000;
+//var PORT = process.env.PORT || 3000;
 const uuidV4 = require('uuid/v4');
 
 
@@ -16,9 +16,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/client'));
 //add
-app.listen(PORT, () => {
-   console.log(`Our app is running on port ${ PORT }`);
-});
+//app.listen(PORT, () => {
+  // console.log(`Our app is running on port ${ PORT }`);
+//});
 //end
 app.get('/', function(req, res, next) {  
     res.sendFile(__dirname + '/client/index.html');
