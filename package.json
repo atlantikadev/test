@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js"
   },
-  "author": "Younes Ouhbi",
+  "author": "Youness",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",

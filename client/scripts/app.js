@@ -174,7 +174,7 @@ function onBackToLoginButtonClicked(e){
 
 function onRegisterValiderButtonClicked(e) {
     e.preventDefault();
-    console.log("hi younnes ************lllll**");
+    //console.log("hi younnes ************lllll**");
     $.post('/AddUser', {
         username: $('#lg-username').val(),
         firstname: $('#lg-firstname').val(),
@@ -185,6 +185,7 @@ function onRegisterValiderButtonClicked(e) {
     .done(function (result) {
             console.log("it's done !!!!!!!!!");
     })
+    switchToScreen(g_screens.login);
 }
 
 
