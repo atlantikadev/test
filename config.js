@@ -1,9 +1,13 @@
 var config = {
 
     platform: {
-        webPort: process.env.WEB_PORT || 4200,
+        webPort: process.env.WEB_PORT || 5000,
         enableLogging: false,
+<<<<<<< HEAD
         databaseURL: 'mongodb://localhost:27017/tijari_game_db'
+=======
+        databaseURL: 'mongodb+srv://tijarigame:YouNassima01@cluster0.uk47ovk.mongodb.net/'
+>>>>>>> 40b07a26ebe207171e88532db094150c616513fe
     }, 
 
     game: {

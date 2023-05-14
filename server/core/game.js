@@ -106,15 +106,22 @@ function Game(gameManager, gameConfig) {
         }
         else {
             this.players = [];
+<<<<<<< HEAD
             console.log("humanPlayersCount : "+humanPlayersCount);
             
+=======
+>>>>>>> 40b07a26ebe207171e88532db094150c616513fe
             for (var i = humanPlayersCount + 1; i <= 5; i++) {
                 var aiPlayerConfig = this.gameConfig.ai.players[i - humanPlayersCount - 1];
                 aiPlayer = new AiPlayer(aiPlayerConfig);
 
                 this.players.push(aiPlayer.getPlayerInfo());
                 this.virtualPlayers[aiPlayer.getId()] = aiPlayer;
+<<<<<<< HEAD
                 
+=======
+                console.log("players: "+i+" : "+aiPlayer.getUsername());
+>>>>>>> 40b07a26ebe207171e88532db094150c616513fe
             }
 
             
