@@ -126,7 +126,7 @@ io.sockets
         socket.on('NEW_GAME_REQUESTED', function() {
 
             // Retrieve the profile data from the socket
-            var profile = socket.decoded_token;
+            var profile = socket.decoded_token;  
 
             // Try to find a game first
             var game = gameManager.findGame();

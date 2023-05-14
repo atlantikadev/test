@@ -1,7 +1,7 @@
 var bcrypt = require('bcrypt');
 var mongoClient = require('mongodb').MongoClient;
 var ObjectId = require('mongodb').ObjectId;
-var tijariGameDbUrl = 'mongodb://unes:0000@cluster0-shard-00-00.7fzoc.mongodb.net:27017,cluster0-shard-00-01.7fzoc.mongodb.net:27017,cluster0-shard-00-02.7fzoc.mongodb.net:27017/tijari?ssl=true&replicaSet=atlas-2zeozh-shard-0&authSource=admin&retryWrites=true&w=majority';
+var tijariGameDbUrl = 'mongodb://localhost:27017/tijari_game_db';
 var tijariGameDb = null;
 
 
@@ -293,7 +293,6 @@ function addComment(commentData) {
 }
 
 
-
 module.exports = {
     connect: connect,
     saveGame: saveGame,
@@ -310,3 +309,4 @@ module.exports = {
     authenticateUser: authenticateUser,
     addComment: addComment
 };
+

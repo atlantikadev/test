@@ -1,5 +1,5 @@
 var mongoClient = require('mongodb').MongoClient;
-var tijariGameDbUrl = 'mongodb://app:TiJaRi2017@ds135830.mlab.com:35830/tijari_game_db';
+var tijariGameDbUrl = 'mongodb://localhost:27017/tijari_game_db';
 
 var playerType = 'ai'; // 'human' or 'ai'
 var playerUsername = 'Ami.ne'; // only valid for human players. ignored for ai

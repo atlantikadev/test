@@ -3,8 +3,8 @@ var config = {
     platform: {
         webPort: process.env.WEB_PORT || 4200,
         enableLogging: false,
-        databaseURL: 'mongodb://unes:0000@cluster0-shard-00-00.7fzoc.mongodb.net:27017,cluster0-shard-00-01.7fzoc.mongodb.net:27017,cluster0-shard-00-02.7fzoc.mongodb.net:27017/tijari?ssl=true&replicaSet=atlas-2zeozh-shard-0&authSource=admin&retryWrites=true&w=majorityy'
-    },   
+        databaseURL: 'mongodb://localhost:27017/tijari_game_db'
+    }, 
 
     game: {
         matchmaking: {
