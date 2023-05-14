@@ -78,16 +78,15 @@ function Game(gameManager, gameConfig) {
 
 
         // Subscribe to human players actions (all players in this.players are human at this point).
-        for(var i = 0; i < this.players.length; i++) {
+        // for(var i = 0; i < this.players.length; i++) {   
+        //     var humanPlayerId = this.players[i].id;
+        //     var humanPlayerSocket = this.humanPlayers[humanPlayerId];
 
-            var humanPlayerId = this.players[i].id;
-            var humanPlayerSocket = this.humanPlayers[humanPlayerId];
-
-            humanPlayerSocket.on('bid_submitted', function(bid, callback){ self.onHumanPlayerSubmittedBid(bid, callback); });
-            humanPlayerSocket.on('triunfo_chosen', function(triunfo, callback){ self.onHumanPlayerChoseTriunfo(triunfo, callback); });
-            humanPlayerSocket.on('song_performed', function(song, callback){ self.onHumanPlayerPerformedSong(song, callback); });
-            humanPlayerSocket.on('play_performed', function(play, callback){ self.onHumanPlayerPerformedPlay(play, callback); });
-        }
+        //     humanPlayerSocket.on('bid_submitted', function(bid, callback){ self.onHumanPlayerSubmittedBid(bid, callback); });
+        //     humanPlayerSocket.on('triunfo_chosen', function(triunfo, callback){ self.onHumanPlayerChoseTriunfo(triunfo, callback); });
+        //     humanPlayerSocket.on('song_performed', function(song, callback){ self.onHumanPlayerPerformedSong(song, callback); });
+        //     humanPlayerSocket.on('play_performed', function(play, callback){ self.onHumanPlayerPerformedPlay(play, callback); });
+        // }
 
 
         // Add virtual players
@@ -106,12 +105,14 @@ function Game(gameManager, gameConfig) {
             this.virtualPlayers[aiPlayer.getId()] = aiPlayer;
         }
         else {
-            for (var i = humanPlayersCount + 1; i <= 4; i++) {
+            this.players = [];
+            for (var i = humanPlayersCount + 1; i <= 5; i++) {
                 var aiPlayerConfig = this.gameConfig.ai.players[i - humanPlayersCount - 1];
                 aiPlayer = new AiPlayer(aiPlayerConfig);
 
                 this.players.push(aiPlayer.getPlayerInfo());
                 this.virtualPlayers[aiPlayer.getId()] = aiPlayer;
+                console.log("players: "+i+" : "+aiPlayer.getUsername());
             }
         }
 

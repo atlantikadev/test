@@ -1,5 +1,5 @@
 var mongoClient = require('mongodb').MongoClient;
-var tijariGameDbUrl = 'mongodb://app:TiJaRi2017@ds135830.mlab.com:35830/tijari_game_db';
+var tijariGameDbUrl = 'mongodb://localhost:27017/tijari_game_db';
 
 
 mongoClient.connect(tijariGameDbUrl, function (err, db) {
