@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\data",
+    "\\server",
+    "\\server\\ai",
+    "\\server\\ai\\exp-sys-lv3-strat",
+    "\\server\\core",
+    "\\server\\data"
+  ],
+  "SelectedNode": "\\server\\ai\\exp-sys-lv3-strat\\reasoner.js",
+  "PreviewInSolutionExplorer": false
+}
